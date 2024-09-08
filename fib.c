@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
 
    if (strcmp(method, "r")  == 0) {
       results = recursive(N);
-   } else if (strcmp(method, "r")  == 0) {
+   } else if (strcmp(method, "i")  == 0) {
       results = iterative(N);
    } else {
       printf("Use 'r' for recursive or 'i' for iterative.\n");
