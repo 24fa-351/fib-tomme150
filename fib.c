@@ -12,5 +12,18 @@ int main(int argc, char *argv[]) {
    char *method = argv[2];
    char *fileName = argv[3];
 
+   FILE *file = fopen(fileName, "r");
+
+   if (file == NULL) {
+      printf("Could not open file %s\n", fileName);
+      return 1;
+   }
+
+   printf("%d\n", number);
+   printf("%s\n", method);
+   printf("%s\n", fileName);
+      
+   fclose(file);
+
    return 0;
 }
